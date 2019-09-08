@@ -6,16 +6,27 @@
 }
 
 header{
-    background: black url("../img/header.jpg") no-repeat center;
     width:100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+header::after{
+    opacity: 0.8;
+    z-index: 1;
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    background: black url("../img/header.jpg") no-repeat center;
 }
 
 header h1{
     color:white;
     font-size: 5em;
     font-weight: 700;
+    letter-spacing: 6px;
 }
